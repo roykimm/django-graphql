@@ -1,0 +1,16 @@
+python -m venv venv 
+venv/Scripts/activate
+pip install django
+django-admin startproject core .
+python manage.py startapp books
+python manage.py startapp users
+
+pip install graphene-django
+
+build a custom user model
+
+setup graphql and jwt
+
+pip install django-graphql-jwt
+
+pip freeze > requirements.txt
