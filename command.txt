@@ -12,5 +12,10 @@ build a custom user model
 setup graphql and jwt
 
 pip install django-graphql-jwt
+pip install django-graphql-auth
 
 pip freeze > requirements.txt
+
+setup django-graphql-auth
+
+user 등록

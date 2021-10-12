@@ -14,7 +14,7 @@ class AuthMutation(graphene.ObjectType):
    password_change = mutations.PasswordChange.Field()
 
 class Query(UserQuery, MeQuery, graphene.ObjectType):
-    pass
+   pass
 
 class Mutation(AuthMutation, graphene.ObjectType):
    pass
