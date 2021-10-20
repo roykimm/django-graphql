@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'board',
     'graphene_django',
     'graphql_jwt.refresh_token.apps.RefreshTokenConfig',
+    'graphql_auth',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -135,9 +137,12 @@ GRAPHENE = {
 }
 
 AUTHENTICATION_BACKENDS = [
+    #'graphql_auth.backends.GraphQLAuthBackend',
     'graphql_auth.backends.GraphQLAuthBackend',
     'django.contrib.auth.backends.ModelBackend',
 ]
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 # Default primary key field type
